@@ -12,7 +12,12 @@ class Detector:
             process_id = ctypes.c_ulong()
             clipboard_owner = self.user32.GetClipboardOwner()
 
-            self.user32.GetWindowThreadProcessId(clipboard_owner, ctypes.byref(process_id))
+            self.user32.GetWindowThreadProcessId(
+                clipboard_owner,
+                ctypes.byref(
+                    process_id
+                )
+            )
 
             if process_id.value != 0:
                 if process_id.value not in self.detections:
