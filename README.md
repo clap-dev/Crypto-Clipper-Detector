@@ -19,6 +19,3 @@ python main.py
 ## How does it work?
 
 It's quite simple. Using ctypes to access the lower-level api's, we are able to use the function `GetClipboardOwner` which according to the [MSN Docs](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getclipboardowner) `"If the function succeeds, the return value is the handle to the window that owns the clipboard."`. This is quite useful as crypto clippers attack the clipboard.
-
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
