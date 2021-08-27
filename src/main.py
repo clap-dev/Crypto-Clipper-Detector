@@ -19,16 +19,15 @@ class Detector:
                 )
             )
 
-            if process_id.value != 0:
-                if process_id.value not in self.detections:
-                    process_name = psutil.Process(process_id.value).name()
-                    process_path = (process.exe() for process in psutil.process_iter() if process.name() == process_name)
+            if process_id.value and process_id.value not in self.detections:
+                process_name = psutil.Process(process_id.value).name()
+                process_path = (process.exe() for process in psutil.process_iter() if process.name() == process_name)
 
-                    print(next(process_path))
+                print(next(process_path))
 
-                    self.detections.add(process_id.value)
+                self.detections.add(process_id.value)
 
-            time.sleep(0.5)
+            time.sleep(0.25)
 
 if __name__ == '__main__':
     detector = Detector()
