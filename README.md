@@ -2,7 +2,7 @@
 
 Simply put, the 21st century has had a upspring in malware. Along the course, came a simple but effective piece of malware that latches onto the infected users clipboard and replaces any crypto address to the attackers personal address. Crypto addresses are very easy to mistake for another, making victims lose money. Simple, yet effective.
 
-![screen-gif]([https://clap.shx.gg/cKm5jx.gif](https://i.imgur.com/QKLd5fL.gif))
+![screen-gif](https://i.imgur.com/QKLd5fL.gif)
 
 ## Installation
 
