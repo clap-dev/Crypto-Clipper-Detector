@@ -7,7 +7,7 @@ Simply put, the 21st century has had a upspring in malware. Along the course, ca
 ## Installation
 
 ```bash
-pip install -e requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
